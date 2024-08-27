@@ -27,16 +27,12 @@ public class Branch : MonoBehaviour
 
                 if (leftBranch == false)
                 {
-                    //selectedChild.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
                     selectedChild.GetComponent<Bird>().moveBirdTo(new Vector3((5f) - (2.5f * i), 1.64f, 0f),180f);
-                    //selectedChild.transform.localPosition = new Vector3((0.04f) - (0.02f * i), 0.2f, 0f);
 
                 }
                 else
                 {
-                    //selectedChild.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
                     selectedChild.GetComponent<Bird>().moveBirdTo(new Vector3((-5f) + (2.5f * i), 1.64f, 0f),0f);
-                    //selectedChild.transform.localPosition = new Vector3((-0.04f) + (0.02f * i), 0.2f, 0f);
                 }
                     
             }
